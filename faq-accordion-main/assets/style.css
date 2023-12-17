@@ -1,0 +1,78 @@
+.background-image{
+    background-image: url("./images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+/* Update card width to be responsive */
+.card {
+    box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2);
+    width: 90%; /* Adjust as needed for responsiveness */
+    max-width: 33rem; /* Set maximum width for larger screens */
+    border-radius: 1rem;
+    background-color: white;
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+/* Adjust padding for smaller screens */
+.card-container {
+    padding: 2rem; /* Adjust as needed */
+}
+
+.h1icon{
+    background-image: url('./images/icon-star.svg');
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+}
+
+/* Update container styles for better responsiveness */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem; /* Use min-height for smaller content */
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('./fonts/static/WorkSans-Regular.ttf'),
+        url('./fonts/static/WorkSans-Bold.ttf'),
+        url('./fonts/static/WorkSans-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "WorkSans";
+}
+/* Media query for smaller screens */
+
+
+.accordion{
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+
+  .accordion:after {
+    content: url('./images/icon-plus.svg');
+    float: right;
+  }
+  
+  .active:after {
+    content: url('./images/icon-minus.svg');
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
